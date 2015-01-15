@@ -1,4 +1,3 @@
-library(reshape2)
 
 ## load the X_test and Y_test data sets
 X_test <- read.table("X_test.txt")
