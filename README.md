@@ -1,3 +1,8 @@
+#Getting and Cleaning Data
+
+
+
+
 You should create one R script called run_analysis.R that does the following.
 
 1. Merges the training and the test sets to create one data set.
@@ -9,6 +14,7 @@ You should create one R script called run_analysis.R that does the following.
 # How to run the R scipt
 
 -It's better to put all the data sets together in one single folder and set the directory to that folder
+
 -There are some codes like *head*，*names* may not be useful in this assignment. I just use them to debug or find some information.
 
 
