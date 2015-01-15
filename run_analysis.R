@@ -19,7 +19,7 @@ feature_mean_std <- grep("mean|std",feature[,2])
 ## give the name of the X_test ,Y_test and subject
 names(X_test) <- feature[,2]
 names(Y_test) <- c("Activity_ID","Activity")
-names(subject_test) <- "Subject"
+
 
 ## Get the new X_test based on the indices we just extracted
 
@@ -30,9 +30,11 @@ length(X_test1)
 subject_test <- read.table("subject_test.txt")
 subject_train <- read.table("subject_train.txt")
 
+
+names(subject_test) <- "Subject"
 ##combine the data  and the cleaning for test is complete  ^_^
 test <- cbind(subject_test, Y_test, X_test1)
-
+length(test)
 ##Read the training data set
 X_train <- read.table("X_train.txt")
 Y_train <- read.table("y_train.txt")
@@ -60,7 +62,7 @@ train_test <- rbind(test, train)
 ##standing_mean <- rowMeans((subset(train_test, train_test[,3]=='STANDING')[,4:length(train_test)]))
 ##laying_mean <- rowMeans((subset(train_test, train_test[,3]=='LAYING')[,4:length(train_test)]))
 
-#Clearly not a good idea ! ???
+#Clearly not a good idea ! ↑
 
 ## Use aggregate function
 
