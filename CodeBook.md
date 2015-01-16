@@ -37,8 +37,8 @@ Basically what I did are the following:
 - combine the two data sets
 - creat the clean data set using aggregate function
 
-My final tidy data set has 180 columns which makes sense because there are thirty subjects and each has 6 activities.
-
+My final tidy data set has 180 rows and 66 columns which makes sense because there are thirty subjects and each has 6 activities.
+Note that I did not count data like meanfeq() ,stdfeq() .
 I also made a lot comments in .R file. It should be not difficult to understand the code. 
 Each line of code has the comment above.
 
