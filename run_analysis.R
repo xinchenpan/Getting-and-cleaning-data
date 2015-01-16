@@ -13,7 +13,7 @@ Y_test[,2] <- activity_label[,2][Y_test[,1]]
 ## load the features,then extract mean and standard deviation for each measurement
 
 feature <- read.table("features.txt")
-feature_mean_std <- grep("mean|std",feature[,2])
+feature_mean_std <- grep("-(mean|std)\\(\\)",feature[,2])
 
 ## give the name of the X_test ,Y_test and subject
 names(X_test) <- feature[,2]
